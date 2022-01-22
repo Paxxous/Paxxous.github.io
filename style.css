@@ -1,19 +1,25 @@
 header {
-
-  margin: 50px;
   text-align: center;
   color: rgb(225, 235, 100);
-
 }
 
-
+#downloads {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  background-color: rgb(85, 200, 114);
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
 
 ul {
   list-style-type: none;
   font-size: xx-large;
 }
 
-body {
+* {
   font-family: 'Roboto', sans-serif;
   
   background-color: rgb(48, 48, 48);
