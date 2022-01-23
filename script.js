@@ -40,7 +40,7 @@ document.addEventListener('keydown', function(key) {
 
 
   // Prevent the character from going off of the game
-  if (you.style.marginLeft == "570px" || you.style.marginLeft == "580px") {
+  if (you.style.marginLeft == "580px" || you.style.marginLeft == "590px") {
     you.style.marginLeft = "0px";
     right_left = 0;
   }
