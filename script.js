@@ -61,7 +61,7 @@ document.addEventListener('keydown', function(key) {
     up_down = 570;
   }
 
-  // sorry if this isn't the idea code
+  // sorry if this isn't the ideal code
 });
 
 //Check if the player and the enemy is colliding to cause a game over. :(
@@ -76,9 +76,37 @@ var isColliding = setInterval(function() {
 
   //
   if (horizontal && vertical) {
-    var comard = new Audio("d/National-Anthem-Of-The-USSR.mp3");
-    comard.play();
+    console.log("touching enemy");
+
     setInterval(function(){}, 1000);
     // window.location.reload()
   }
 }, 10);
+
+var i = 0;
+var animation = setInterval(function() {
+  let difficulty = 100; // in short how many enemys you woudl like to create
+
+  // create an enemey
+  
+
+  
+
+
+  var newenemy = document.getElementById("enmy").cloneNode(true)
+  newenemy.id = "asdf";
+  console.log(i)
+  document.getElementById("enmy").parentNode.appendChild(newenemy);
+
+
+  
+  
+  // createEnemy();
+
+  // create enemys for the amount we want to create
+  for (let i = 0; i < difficulty; i++) {
+    console.log("Hello world");
+  }
+
+}, 1000);
+

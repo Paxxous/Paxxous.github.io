@@ -1,14 +1,15 @@
-header {
-  margin: 100px;
-  text-align: center;
-  color: rgb(225, 235, 100);
-}
-
 * {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: rgb(48, 48, 48);
+}
+
+
+header {
+  margin: 100px;
+  text-align: center;
+  color: rgb(225, 235, 100);
 }
 
 /* game css */
@@ -22,12 +23,16 @@ header {
   border: 4px solid white;
 }
 
-#enmy {
+.enmy {
+  /* general mumbo jumbo */
   position: absolute;
-  margin: auto;
   background-color: black;
   height: 30px;
   width: 30px;
+  /* visibility: hidden; */
+
+  /* animation */
+  animation: slide 3s infinite;
 }
 
 #you {
@@ -35,4 +40,14 @@ header {
   background-color: brown;
   height: 30px;
   width: 30px;
+}
+
+@keyframes slide {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 570px
+  }
 }
